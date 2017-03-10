@@ -75,7 +75,7 @@ $(document).ready(function() {
         }
         baseId = parseInt(baseId);
         player_ids['key_' + player_count] = id;
-        $("#added-players").html($("#added-players").html() + '<div class="col-md-3" id="count_' + player_count + '"><div class="panel panel-primary"><div class="panel-heading"><button type="button" class="close" id="close_' + player_count + '" onclick="removePlayer(' + player_count + ');" card-id="' + player_count + '" aria-label="Close"><span aria-hidden="true" class="">&times;</span></button><h3 class="panel-title">' + name + '</h3></div><div class="panel-body"><span><b>ID: </b>' + id + '</span><br><span><b>Base ID: </b>' + baseId + '</span><br><span><b>Price: </b><a href="' + link + id" target="_blank">Link</a></span><br></div></div></div>');
+        $("#added-players").html($("#added-players").html() + '<div class="col-md-3" id="count_' + player_count + '"><div class="panel panel-primary"><div class="panel-heading"><button type="button" class="close" id="close_' + player_count + '" onclick="removePlayer(' + player_count + ');" card-id="' + player_count + '" aria-label="Close"><span aria-hidden="true" class="">&times;</span></button><h3 class="panel-title">' + name + '</h3></div><div class="panel-body"><span><b>ID: </b>' + id + '</span><br><span><b>Base ID: </b>' + baseId + '</span><br><span><b>Price: </b><a href="' + link + id"' target="_blank">Link</a></span><br></div></div></div>');
         player_count++;
     });
 
